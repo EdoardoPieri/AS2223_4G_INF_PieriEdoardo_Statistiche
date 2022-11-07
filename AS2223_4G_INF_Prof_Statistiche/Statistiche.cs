@@ -19,7 +19,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// </summary>
         /// <param name="valore"></param>
         public void AddValue(int valore)
-        { 
+        {
+            sommaValori = sommaValori + valore;
         }
 
         /// <summary>
