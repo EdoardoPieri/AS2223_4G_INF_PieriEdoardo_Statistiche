@@ -9,10 +9,12 @@ namespace AS2223_4G_INF_Prof_Statistiche
     public class Statistiche
     {
 
-        float sommaValori;
+        double sommaValori;
+        double sommaPesi;
         public Statistiche()
         {
             sommaValori = 0;
+            sommaPesi = 0;
         }
         /// <summary>
         /// Aggiungi un valore senza peso per le statistiche (media aritmetica)
@@ -30,7 +32,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <param name="peso"></param>
         public void AddValue(int valore, double peso)
         {
-
+            sommaPesi = sommaPesi + peso;
+            sommaValori = sommaValori + (valore * peso);
         }
 
         /// <summary>
