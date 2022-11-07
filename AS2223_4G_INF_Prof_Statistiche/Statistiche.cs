@@ -37,6 +37,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
             sommaPesi = sommaPesi + peso;
             sommaValoriPerPeso = sommaValoriPerPeso + (valore * peso);
             numeroValoriConPeso++;
+            numeroValori++;
         }
 
         /// <summary>
@@ -77,7 +78,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public int CountValue()
         {
-
+            return numeroValori;
         }
 
     }
