@@ -15,11 +15,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         double sommaPesi;
         public Statistiche()
         {
-            numeroValoriConPeso = 0;
-            numeroValori = 0;
-            sommaValori = 0;
-            sommaValoriPerPeso = 0;
-            sommaPesi = 0;
+            ClearValue();
         }
         /// <summary>
         /// Aggiungi un valore senza peso per le statistiche (media aritmetica)
@@ -68,7 +64,11 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// </summary>
         public void ClearValue()
         {
-
+            numeroValoriConPeso = 0;
+            numeroValori = 0;
+            sommaValori = 0;
+            sommaValoriPerPeso = 0;
+            sommaPesi = 0;
         }
 
         /// <summary>
