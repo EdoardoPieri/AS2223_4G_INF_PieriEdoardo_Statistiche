@@ -10,11 +10,13 @@ namespace AS2223_4G_INF_Prof_Statistiche
     {
         int numeroValori;
         double sommaValori;
+        double sommaValoriPerPeso;
         double sommaPesi;
         public Statistiche()
         {
             numeroValori = 0;
             sommaValori = 0;
+            sommaValoriPerPeso = 0;
             sommaPesi = 0;
         }
         /// <summary>
@@ -35,7 +37,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         public void AddValue(int valore, double peso)
         {
             sommaPesi = sommaPesi + peso;
-            sommaValori = sommaValori + (valore * peso);
+            sommaValoriPerPeso = sommaValoriPerPeso + (valore * peso);
             numeroValori++;
         }
 
