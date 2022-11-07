@@ -9,12 +9,11 @@ namespace AS2223_4G_INF_Prof_Statistiche
     public class Statistiche
     {
 
-
+        float sommaValori;
         public Statistiche()
         {
-
+            sommaValori = 0;
         }
-
         /// <summary>
         /// Aggiungi un valore senza peso per le statistiche (media aritmetica)
         /// </summary>
